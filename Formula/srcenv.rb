@@ -1,10 +1,10 @@
 class Srcenv < Formula
   desc "A cross-shell tool for sourcing POSIX compliant .env scripts."
   homepage "https://github.com/ins0mniaque/srcenv"
-  url "https://github.com/ins0mniaque/srcenv/archive/main.zip"
-  sha256 "f718bf77106891e11e96067ef37d0b389d428ca32094488d965627c166f793ad"
+  url "https://github.com/ins0mniaque/srcenv/archive/refs/tags/v1.0.1.zip"
+  sha256 "3a277ef46d6655a7e743720531c585b765aae432d37a1bd84f38d60e79ae94b8"
   license "MIT"
-  version "1.0.0"
+  version "1.0.1"
 
   depends_on "jq"
 
@@ -14,8 +14,7 @@ class Srcenv < Formula
   end
 
   test do
-    system "#{bin}/srcenv --version"
-    expected_version = "srcenv 1.0.0"
+    expected_version = "srcenv 1.0.1"
     actual_version = shell_output("#{bin}/srcenv --version").strip
     assert_match expected_version, actual_version
   end

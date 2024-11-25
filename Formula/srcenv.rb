@@ -1,9 +1,9 @@
 class Srcenv < Formula
   desc "Cross-shell tool for sourcing POSIX compliant .env scripts"
   homepage "https://github.com/ins0mniaque/srcenv"
-  url "https://github.com/ins0mniaque/srcenv/archive/refs/tags/v1.2.4.zip"
-  version "1.2.4"
-  sha256 "84335dff7ead278fa7a380236889ef8f5dca0fbccd5e674cff8ad4bb61376aef"
+  url "https://github.com/ins0mniaque/srcenv/archive/refs/tags/v1.2.5.zip"
+  version "1.2.5"
+  sha256 "8c319b20d88e876406daad736ab05f0b34bc9eddd41a9ccf1a34a790647de97a"
   license "MIT"
 
   depends_on "jq"
